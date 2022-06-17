@@ -83,7 +83,7 @@ class bcolors:
     RESET = '\033[0m'
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
-    OKRED = '\033[1;31;40m'
+    OKRED = '\033[91m'
 
 
 def exit(*message):
@@ -1550,7 +1550,7 @@ if __name__ == '__main__':
               event.set()
               ts = time()
               while time() < ts + timer:
-                  logger.debug(f'{bcolors.OKRED}Zielx Attacking Ip:{bcolors.OKBLUE} %s,{bcolors.OKRED} Port:{bcolors.OKBLUE} %s,{bcolors.OKRED} Method:{bcolors.OKBLUE} %s{bcolors.OKRED} PPS:{bcolors.OKBLUE} %s,{bcolors.OKRED} BPS:{bcolors.OKBLUE} %s / %d%%{bcolors.RESET}' %
+                  logger.debug(f'{bcolors.OKRED}Zielx Attacking Ip Target:{bcolors.OKBLUE} %s,{bcolors.OKRED} Port:{bcolors.OKBLUE} %s,{bcolors.OKRED} Method:{bcolors.OKBLUE} %s{bcolors.OKRED} PPS:{bcolors.OKBLUE} %s,{bcolors.OKRED} BPS:{bcolors.OKBLUE} %s / %d%%{bcolors.RESET}' %
                                (target or url.host,
                                 port or (url.port or 80),
                                 method,
