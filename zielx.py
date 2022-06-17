@@ -1550,7 +1550,7 @@ if __name__ == '__main__':
               event.set()
               ts = time()
               while time() < ts + timer:
-                  logger.debug(f'{bcolors.OKRED}Zielx Attacking Ip Target:{bcolors.OKBLUE} %s,{bcolors.OKRED} Port:{bcolors.OKBLUE} %s,{bcolors.OKRED} Method:{bcolors.OKBLUE} %s{bcolors.OKRED} PPS:{bcolors.OKBLUE} %s,{bcolors.OKRED} BPS:{bcolors.OKBLUE} %s / %d%%{bcolors.RESET}' %
+                  logger.debug(f'{bcolors.OKRED}Target:{bcolors.OKBLUE} %s,{bcolors.OKRED} Port:{bcolors.OKBLUE} %s,{bcolors.OKRED} Method:{bcolors.OKBLUE} %s{bcolors.OKRED} PPS:{bcolors.OKBLUE} %s,{bcolors.OKRED} BPS:{bcolors.OKBLUE} %s / %d%%{bcolors.RESET}' %
                                (target or url.host,
                                 port or (url.port or 80),
                                 method,
